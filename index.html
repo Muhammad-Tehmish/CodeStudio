@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeStudio | CodePen Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-icon">
+                <i class='bx bxl-codepen'></i>
+            </div>
+            CodeStudio <i class='bx bxs-pencil pencil-icon'></i>
+            <small>Muhammad Tehmish</small>
+        </div>
+        <div class="hamburger">
+            <i class='bx bx-menu-alt-left bx-flip-vertical' style='color:#ffffff'></i>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#"><i class='bx bxs-cloud'></i> Save</a></li>
+                <li><a href="#"><i class='bx bxs-cog'></i> Settings</a></li>
+                <li><a href="#"><i class='bx bxs-grid-alt'></i></a></li>
+                <li><a href="#" class="nav-signup">Sign Up</a></li>
+                <li><a href="#">Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="left">
+            <label class="label-1"><i class='bx bxl-html5'></i> HTML</label>
+            <textarea id="html-code" onkeyup="run()"></textarea>
+            <label class="label-2"><i class='bx bxl-css3'></i> CSS</label>
+            <textarea id="css-code" onkeyup="run()"></textarea>
+            <label class="label-3"><i class='bx bxl-javascript'></i> JS</label>
+            <textarea id="js-code" onkeyup="run()"></textarea>
+        </div>
+        <div class="right">
+            <label><i class='bx bx-play'></i> Result</label>
+            <iframe id="result"></iframe>
+        </div>
+    </div>
+
+    <footer>
+        Copyright &copy CodeStudio | Muhammad Tehmish
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

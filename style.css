@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background: #010101;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+    padding-left: 80px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 500;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    position: relative;
+}
+
+.logo small {
+    font-size: 15px;
+    color: #848896;
+    font-weight: normal;
+}
+
+.pencil-icon {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    font-size: 18px;
+}
+
+.logo-icon i {
+    color: #ffffff;
+    position: absolute;
+    left: -40%;
+    font-size: 50px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.navbar {
+    height: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: #010101;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 5px;
+}
+
+.navbar ul li a, .navbar ul li button {
+    display: block;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 13px 20px;
+    border-radius: 4px;
+    transition: 0.2s;
+    background: #444857;
+    font-weight: 400;
+}
+
+.navbar ul li button {
+    border: none;
+    cursor: pointer;
+}
+
+.navbar ul li a.nav-signup {
+    color: #000000;
+    background: #47CF73;
+    transition: 0.2s;
+}
+
+.navbar ul li a.nav-signup:hover {
+    color: #ffffff;
+    background: #248C46;
+}
+
+.navbar ul li a i {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.navbar ul li a:hover {
+    background: #5A5F73;
+}
+
+@media only screen and (max-width: 900px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger i {
+        font-size: 30px;
+    }
+
+    .hamburger {
+        background: #444857;
+        transition: 0.2s;
+        border-radius: 4px;
+        margin-right: 4%;
+    }
+
+    .hamburger:hover {
+        background: #5A5F73;
+    }
+
+    .navbar {
+        height: 0;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: #010101;
+        transition: height 0.3s ease, opacity 0.3s ease;
+        overflow: hidden;
+        opacity: 0;
+        z-index: 1;
+    }
+
+    .navbar.active {
+        height: auto;
+        opacity: 1;
+    }
+
+    .navbar ul {
+        display: block;
+        list-style: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    .navbar ul li a {
+        background: none;
+    }
+}
+
+
+
+body {
+    background: #454545;
+    color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    height: calc(100vh-70px);
+    padding: 20px;
+    display: flex;
+}
+
+.left, .right {
+    flex-basis: 50%;
+    padding: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 50%;
+    background: #1D1E22;
+    color: #fff;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    font-size: 12px;
+    resize: none;
+}
+
+iframe {
+    width: 100%;
+    height: 175%;
+    background: #ffffff;
+    border: 0;
+    outline: 0;
+}
+
+label i {
+    margin-right: 5px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    background: #010101;
+    height: 30px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.label-1 i {
+    color: #FF3C41;
+}
+
+.label-2 i {
+    color: #0EBEFF;
+}
+
+.label-3 i {
+    color: #FCD000;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0 20px;
+    font-size: 13px;
+    width: 100%;
+    background: #010101;
+    position: absolute;
+    bottom: 0;
+}
